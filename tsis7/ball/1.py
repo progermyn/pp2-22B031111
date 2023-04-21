@@ -5,17 +5,17 @@ pygame.init()
 screen = pygame.display.set_mode((640, 480))
 pygame.display.set_caption("Ball")
 
-ball_color = (255, 0, 0)
+ball_color = (255, 255, 255)
 ball_radius = 25
 ball_position = [screen.get_width() // 2, screen.get_height() // 2]
-ball_speed = 20
+ball_speed = 30
 
 def draw_ball():
     pygame.draw.circle(screen, ball_color, ball_position, ball_radius)
 
 running = True
 while running:
-    screen.fill((255, 255, 255))
+    screen.fill((255, 0, 0))
 
     draw_ball()
 
